@@ -10,7 +10,7 @@ const HeroSection = () => {
       >
         <div className='flex items-center justify-center'>
           <div className='bg-white w-20 md:w-30 h-[1px]'></div>
-          <p className='text-xl md:text-3xl mx-7 poppinsFont'>21-12-2024</p>
+          <p className='text-lg md:text-xl mx-7 poppinsFont'>21-12-2024</p>
           <div className='bg-white w-20 md:w-30 h-[1px]'></div>
         </div>
         <div className='w-full flex items-center justify-center'>
