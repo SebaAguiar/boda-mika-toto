@@ -8,8 +8,8 @@ const HeroSection = () => {
 				id={styles.hero}
 				className="w-full h-[500px] flex flex-col items-center justify-center gap-4 text-white"
 			>
-				<div className="flex items-center justify-center" />
-				<div className="bg-white w-20 md:w-30 h-[1px]">
+				<div className="flex items-center justify-center">
+					<div className="bg-white w-20 md:w-30 h-[1px]" />
 					<p className="text-lg md:text-xl mx-7 poppinsFont">21-12-2024</p>
 					<div className="bg-white w-20 md:w-30 h-[1px]" />
 				</div>
