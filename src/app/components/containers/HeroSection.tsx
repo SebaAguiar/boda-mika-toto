@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "@/styles/heroSection.module.css";
 import CounterBack from "../CounterBack";
-const HeroSection = () => {
+import Rings from "../svgs/Rings";
+const HeroSection = (): JSX.Element => {
 	return (
 		<>
 			<header
@@ -25,6 +26,9 @@ const HeroSection = () => {
 				<div className="bg-white w-64 md:w-96 h-[1px] mt-8" />
 				<div>
 					<CounterBack />
+				</div>
+				<div>
+					<Rings />
 				</div>
 			</header>
 		</>
