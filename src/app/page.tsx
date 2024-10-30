@@ -1,14 +1,14 @@
-import React from 'react';
-import HeroSection from './components/containers/HeroSection';
+import React from "react";
+import LandingContainer from "./components/containers/LandingContainer";
 
 const Home = async () => {
-  return (
-    <>
-      <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-        <HeroSection />
-      </main>
-    </>
-  );
+	return (
+		<>
+			<main className="flex min-h-screen flex-col items-center justify-between">
+				<LandingContainer />
+			</main>
+		</>
+	);
 };
 
 export default Home;

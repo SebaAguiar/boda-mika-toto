@@ -1,13 +1,16 @@
 import React from "react";
-import styles from "@/styles/heroSection.module.css";
-import CounterBack from "../CounterBack";
-import Rings from "../svgs/Rings";
 const HeroSection = (): JSX.Element => {
 	return (
 		<>
-			<header
-				id={styles.hero}
-				className="w-full h-[500px] flex flex-col items-center justify-center gap-4 text-white"
+			<div
+				className="w-full h-[20vh] sm:h-[100vh] relative flex flex-col justify-center items-center overflow-hidden gap-4 text-white"
+				style={{
+					backgroundImage: "url('/arriba-1.jpg')",
+					backgroundPosition: "center 40%",
+					backgroundAttachment: "fixed",
+					backgroundRepeat: "no-repeat",
+					backgroundSize: "cover",
+				}}
 			>
 				<div className="flex items-center justify-center">
 					<div className="bg-white w-20 md:w-30 h-[1px]" />
@@ -23,14 +26,8 @@ const HeroSection = (): JSX.Element => {
 						Toto
 					</h1>
 				</div>
-				<div className="bg-white w-64 md:w-96 h-[1px] mt-8" />
-				<div>
-					<CounterBack />
-				</div>
-				<div>
-					<Rings />
-				</div>
-			</header>
+				<div className="bg-white w-64 md:w-96 h-[1px] mt-2" />
+			</div>
 		</>
 	);
 };

@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/counterBack.module.css";
+import WavySeparator from "./WavySeparator";
 
 interface ITimeLeft {
 	days: number;
@@ -59,19 +60,28 @@ const CounterBack = (): JSX.Element => {
 	}
 
 	return (
-		<div
-			id={styles.counterBack}
-			className="flex items-center justify-center w-96 h-96 z-20"
-		>
-			<div className="bg-white w-40 md:w-60 h-40 md:h-60 rounded-full flex items-center justify-center text-black flex-col gap-3 z-0">
-				<h2 className="font-thin text-amber-500 text-2xl poppinsFont align-text-top">
-					Faltan
-				</h2>
-				<div className="flex w-full items-center justify-center">
-					{timerComponents.length ? timerComponents : <span>Time is up!</span>}
+		<section className="w-full h-[400px] flex flex-col">
+			<WavySeparator />
+			<div className="w-full h-5/6 flex items-center justify-center">
+				<div
+					id={styles.counterBack}
+					className="flex items-center justify-center w-96 h-96 z-20"
+				>
+					<div className="bg-white w-40 md:w-60 h-40 md:h-60 rounded-full flex items-center justify-center text-black flex-col gap-3 z-0">
+						<h2 className="font-thin text-amber-500 text-2xl poppinsFont align-text-top">
+							Faltan
+						</h2>
+						<div className="flex w-full items-center justify-center">
+							{timerComponents.length ? (
+								timerComponents
+							) : (
+								<span>Time is up!</span>
+							)}
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

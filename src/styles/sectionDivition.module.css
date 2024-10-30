@@ -1,0 +1,31 @@
+#divition {
+	position: relative;
+	width: 100%;
+	height: 200px; /* Ajusta la altura según tus necesidades */
+	background: #7ed56f; /* Color de fondo principal */
+	overflow: hidden;
+}
+
+#wave {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 200px; /* Ajusta la altura según tus necesidades */
+	background: #55c57a; /* Color de la onda */
+	clip-path: path(
+		"M0,128L48,160C96,192,192,256,288,266.7C384,277,480,235,576,213.3C672,192,768,192,864,165.3C960,139,1056,85,1152,69.3C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+	);
+}
+
+#wave::before {
+	content: "";
+	position: absolute;
+	top: -50px; /* Ajusta la posición según tus necesidades */
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px; /* Ajusta el tamaño de la gota */
+	height: 100px;
+	background: #55c57a; /* Color de la gota */
+	border-radius: 50%;
+	z-index: 1; /* Asegura que la gota esté por encima de la onda */
+}
