@@ -1,7 +1,7 @@
-import React from 'react';
-import type { Metadata } from 'next';
+import React from "react";
+import type { Metadata } from "next";
 // import { Cookie, Poppins } from 'next/font/google';
-import './globals.css';
+import "./globals.css";
 
 // const cookie = Cookie({
 //   subsets: ['latin'],
@@ -16,20 +16,20 @@ import './globals.css';
 // });
 
 export const metadata: Metadata = {
-  title: 'Boda Mika y Toto',
-  description: 'Bienvenidos a nuestra boda',
+	title: "Boda Mika y Toto",
+	description: "Bienvenidos a nuestra boda",
 };
 
 const RootLayout = async ({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) => {
-  return (
-    <html lang='en'>
-      <body className={`w-screen h-screen flex flex-col`}>{children}</body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className="max-w-screen h-screen flex flex-col">{children}</body>
+		</html>
+	);
 };
 
 export default RootLayout;

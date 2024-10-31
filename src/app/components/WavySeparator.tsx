@@ -1,6 +1,6 @@
-import React from "react";
+import type React from "react";
 
-const WavySeparator = ({ className = "" }) => (
+const WavySeparator = ({ className = "" }): React.JSX.Element => (
 	<div className={`w-full h-24 relative overflow-hidden ${className}`}>
 		<svg
 			viewBox="0 0 500 150"

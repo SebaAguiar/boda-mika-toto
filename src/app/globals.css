@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .cookieFont {
-  font-family: 'Cookie', cursive;
+	font-family: "Cookie", cursive;
 }
 
 .poppinsFont {
-  font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
+}
+
+.montserratFont {
+	font-family: "Montserrat", sans-serif;
 }
