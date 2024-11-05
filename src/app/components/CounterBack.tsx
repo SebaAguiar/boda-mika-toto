@@ -10,6 +10,7 @@ interface ITimeLeft {
 	seconds: number;
 }
 const calculateTimeLeft = (): ITimeLeft => {
+	"use client";
 	const difference = +new Date("2024-12-21T00:00:00") - +new Date();
 	let timeLeft: ITimeLeft = {
 		days: 0,

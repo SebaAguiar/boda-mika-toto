@@ -14,13 +14,15 @@ const HeroSection = (): JSX.Element => {
 			>
 				<div className="flex items-center justify-center">
 					<div className="bg-white w-20 md:w-30 h-[1px]" />
-					<p className="text-lg md:text-xl mx-7 poppinsFont">21-12-2024</p>
+					<p className="text-lg md:text-xl lg:text-2xl mx-7 montserratFont">
+						21-12-2024
+					</p>
 					<div className="bg-white w-20 md:w-30 h-[1px]" />
 				</div>
 				<div className="w-full flex items-center justify-center">
-					<h1 className="text-4xl md:text-7xl cookieFont w-full flex items-center justify-center gap-4">
+					<h1 className="text-5xl md:text-8xl lg:text-9xl cookieFont w-full flex items-center justify-center gap-4">
 						Mika{" "}
-						<span className="rounded-[100%] bg-white text-slate-600 text-4xl h-10 w-10 flex items-center justify-center">
+						<span className="rounded-[100%] bg-white text-slate-600 text-4xl lg:5xl h-10 w-10 flex items-center justify-center m-2">
 							&
 						</span>{" "}
 						Toto
