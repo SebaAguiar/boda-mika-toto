@@ -1,0 +1,24 @@
+"use client";
+import { useStore } from "@/zustand/store";
+import React from "react";
+
+const ExtraDataModalButton = () => {
+	const setPartyOpen = useStore((state) => state.setPartyOpen);
+	const handleClick = (): void => {
+		setPartyOpen();
+	};
+
+	return (
+		<>
+			<button
+				className="font-bold bg-white text-[#83968d] hover:text-white hover:bg-[#83968d] w-72 h-10 rounded-3xl transition-all duration-500 shadow-md"
+				type="button"
+				onClick={handleClick}
+			>
+				Mas Info
+			</button>
+		</>
+	);
+};
+
+export default ExtraDataModalButton;

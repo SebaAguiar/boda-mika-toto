@@ -17,3 +17,14 @@
 .montserratFont {
 	font-family: "Montserrat", sans-serif;
 }
+
+h2,
+h3 {
+	color: #4a6370;
+}
+
+p {
+	font-family: "Montserrat", sans-serif;
+	font-size: large;
+	color: #83968d,;
+}

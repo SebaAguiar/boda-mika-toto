@@ -1,21 +1,24 @@
-import React from "react";
+// "use client";
+import type React from "react";
 import HeroSection from "../HeroSection";
 import CounterBack from "../CounterBack";
-import { PiChurchLight, PiConfettiLight } from "react-icons/pi";
+import { PiChurchDuotone, PiConfettiDuotone } from "react-icons/pi";
 import WeddingInformation from "./WeddingInformation";
 import PartySection from "./PartySection";
-import { useStore } from "@/zustand/store";
+import ModalsContainter from "./ModalsContainter";
+import PresentsContainer from "./PresentsContainer";
+// import { useStore } from "@/zustand/store";
 
 const weddingData = [
 	{
-		svg: <PiChurchLight />,
+		svg: <PiChurchDuotone />,
 		title: "Ceremonia",
 		date: "2024-12-21T20:00:00",
 		place: "Basílica Inmaculada Concepción",
 		address: "Urquiza 1000, Concepción del Uruguay",
 	},
 	{
-		svg: <PiConfettiLight />,
+		svg: <PiConfettiDuotone />,
 		title: "Fiesta",
 		date: "2024-12-21T20:00:00",
 		place: "Basílica Inmaculada Concepción",
@@ -23,16 +26,16 @@ const weddingData = [
 	},
 ];
 
-const LandingContainer = async (): Promise<JSX.Element> => {
-	const musicOpen = useStore.getState().musicOpen;
-	console.log(musicOpen);
+const LandingContainer = (): React.JSX.Element => {
 	return (
 		<>
 			<main className="w-full h-full">
+				<ModalsContainter />
 				<HeroSection />
 				<CounterBack />
 				<WeddingInformation data={weddingData} />
 				<PartySection />
+				<PresentsContainer />
 			</main>
 		</>
 	);

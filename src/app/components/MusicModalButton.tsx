@@ -5,17 +5,14 @@ import { useStore } from "@/zustand/store";
 /**************************/
 /**
  * A button to open the MusicModal. When clicked, it toggles the "musicOpen" state.
- *
  * @returns A button to open the MusicModal.
  */
 /**************************/
 const MusicModalButton = (): React.JSX.Element => {
 	const setMusicOpen = useStore((state) => state.setMusicOpen);
-	const isMusicOpen = useStore((state) => state.musicOpen);
 
 	const handleClick = (): void => {
 		setMusicOpen();
-		console.log(isMusicOpen);
 	};
 
 	return (

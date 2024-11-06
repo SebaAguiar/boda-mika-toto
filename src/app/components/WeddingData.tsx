@@ -18,7 +18,7 @@ const WeddingData: React.FC<IWeddingDataProps> = ({
 	return (
 		<>
 			<div className="w-full max-w[100vh] md:w-[50%] h-full flex flex-col items-center justify-center my-5">
-				<div className="w-40 h-40 flex items-center justify-center border rounded-full bg-white text-7xl m-2 shadow-lg">
+				<div className="w-40 h-40 flex items-center justify-center border rounded-full bg-white text-7xl m-2 shadow-lg text-[#83968d]">
 					{svg}
 				</div>
 				<div className="w-full flex flex-col items-center justify-center text-center gap-3">

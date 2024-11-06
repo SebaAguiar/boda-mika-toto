@@ -1,26 +1,32 @@
 import type React from "react";
-import { PiMusicNotesSimpleThin } from "react-icons/pi";
+import {
+	PiMusicNotesDuotone,
+	PiDressDuotone,
+	PiNotepadDuotone,
+} from "react-icons/pi";
 import PartyDataCard from "../PartyDataCard";
 import MusicModalButton from "../MusicModalButton";
+import DressCodeModalButton from "../DressCodeModalButton";
+import ExtraDataModalButton from "../ExtraDataModalButton";
 
 const partyData = [
 	{
 		title: "Musica",
-		icon: <PiMusicNotesSimpleThin />,
+		icon: <PiMusicNotesDuotone />,
 		text: "¿Cuál es la canción que no puede faltar en la PlayList de la fiesta?",
 		button: <MusicModalButton />,
 	},
 	{
 		title: "Dress Code",
-		icon: <></>,
+		icon: <PiDressDuotone />,
 		text: "Una orientacion para tu vestuario",
-		button: <></>,
+		button: <DressCodeModalButton />,
 	},
 	{
-		title: "Tips y Notas",
-		icon: <></>,
-		text: "Información adicional para tener en cuenta",
-		button: <></>,
+		title: "Confirmar",
+		icon: <PiNotepadDuotone />,
+		text: "Tenes tiempo hasta el 26 de Noviembre",
+		button: <ExtraDataModalButton />,
 	},
 ];
 

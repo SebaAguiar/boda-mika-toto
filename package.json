@@ -11,6 +11,8 @@
 		"husky:build": "bunx next build"
 	},
 	"dependencies": {
+		"flowbite": "^2.5.2",
+		"flowbite-react": "^0.10.2",
 		"husky": "^9.1.6",
 		"next": "15.0.0",
 		"react": "19.0.0-rc-65a56d0e-20241020",

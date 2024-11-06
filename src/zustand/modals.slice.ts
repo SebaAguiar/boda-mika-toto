@@ -3,22 +3,22 @@ import type { StateCreator } from 'zustand';
 export interface IModalsState {
   musicOpen: boolean;
   partyOpen: boolean;
-  partyDataOpen: boolean;
+  dressCodeOpen: boolean;
   setMusicOpen: () => void;
   setPartyOpen: () => void;
-  setPartyDataOpen: () => void;
+  setDressCodeOpen: () => void;
 }
 
 export const modalsSlice: StateCreator<IModalsState> = (set) => ({
   musicOpen: false,
   partyOpen: false,
-  partyDataOpen: false,
+  dressCodeOpen: false,
   setMusicOpen: () =>
     set((state: IModalsState) => ({ musicOpen: !state.musicOpen })),
   setPartyOpen: () =>
     set((state: IModalsState) => ({ partyOpen: !state.partyOpen })),
-  setPartyDataOpen: () =>
+  setDressCodeOpen: () =>
     set((state: IModalsState) => ({
-      partyDataOpen: !state.partyDataOpen,
+      dressCodeOpen: !state.dressCodeOpen,
     })),
 });
