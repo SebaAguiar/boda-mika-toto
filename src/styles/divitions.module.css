@@ -1,0 +1,49 @@
+#decorationOne {
+	background-image: url("/ondas01.svg");
+	position: relative;
+	background-size: contain !important;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: 2;
+}
+
+#divitionThree {
+	background-image: url("/lineas01.svg");
+	position: relative;
+	background-size: contain !important;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: -1;
+}
+
+#divitionTwo {
+	background-image: url("/ondas03.svg");
+	position: relative;
+	background-size: contain !important;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: 2;
+}
+
+#divitionFour {
+	background-image: url("/ondas02.svg");
+	position: relative;
+	background-size: contain !important;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: 2;
+}
+
+@media (min-width: 1040px) {
+	#decorationOne {
+		min-height: 200%;
+	}
+}

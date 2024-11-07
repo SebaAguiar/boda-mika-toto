@@ -2,7 +2,7 @@ import React from "react";
 const HeroSection = (): JSX.Element => {
 	return (
 		<>
-			<div
+			<section
 				className="w-full h-[100vh] sm:h-[100vh] relative flex flex-col justify-center items-center overflow-hidden gap-4 text-white"
 				style={{
 					backgroundImage: "url('/arriba-1.jpg')",
@@ -29,7 +29,7 @@ const HeroSection = (): JSX.Element => {
 					</h1>
 				</div>
 				<div className="bg-white w-64 md:w-96 h-[1px] mt-2" />
-			</div>
+			</section>
 		</>
 	);
 };

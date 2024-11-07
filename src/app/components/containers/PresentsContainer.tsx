@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import DivitionFour from "../DivitionFour";
 
 const PresentsContainer = () => {
 	const copyToClipboard = (text: string) => {
@@ -15,21 +16,23 @@ const PresentsContainer = () => {
 
 	return (
 		<>
-			<section className="w-full h-max flex flex-col items-center justify-center text-xl montserratFont text-center text-[#83968d] gap-3">
-				<div className="w-full flex flex-col items-center justify-center text-center">
-					<h2 className="text-4xl md:text-6xl cookieFont">Regalos</h2>
+			<section className="w-full h-max flex flex-col items-center justify-center text-xl montserratFont text-center text-[#83968d] bg-[#efede7] gap-3">
+				<DivitionFour />
+				<div className="w-full flex flex-col items-center justify-center text-center gap-3">
+					<h2 className="text-8xl cookieFont">Regalos</h2>
 					<p>El Regalo Mas importante es tu presencia.</p>
 					<p>
 						Pero si aun asi quieres puede regalarnos enviando al siguiente cbu
 					</p>
 				</div>
 				<div>
-					<ul className="decoration-dotted list-disc flex flex-col items-center justify-center">
+					<ul className="decoration-dotted list-disc flex flex-col items-center justify-center gap-1 mb-20">
 						<li
 							onClick={() => copyToClipboard("BODAMICAYTOTO")}
 							onKeyDown={() => ""}
+							className="cursor-pointer"
 						>
-							<strong>Alias:</strong> BODAMICAYTOTO
+							<strong className="cursor-text">Alias:</strong> BODAMICAYTOTO
 						</li>
 						<li>
 							<strong>Titular:</strong> Osbaldo Abel Aguiar

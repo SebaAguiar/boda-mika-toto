@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/counterBack.module.css";
-import WavySeparator from "./WavySeparator";
+import DivitionOne from "./DivitionOne";
 
 interface ITimeLeft {
 	days: number;
@@ -50,7 +50,7 @@ const CounterBack = (): JSX.Element => {
 		timerComponents.push(
 			<div
 				key={interval}
-				className="flex flex-col items-center justify-center m-2"
+				className="flex flex-col items-center justify-center m-1"
 			>
 				<p className="font-bold text-2xl poppinsFont text-yellow-400">
 					{timeLeft[key]}
@@ -61,18 +61,18 @@ const CounterBack = (): JSX.Element => {
 	}
 
 	return (
-		<section className="w-full h-[400px] flex flex-col">
-			<WavySeparator />
-			<div className="w-full h-5/6 flex items-center justify-center">
+		<section className="w-full h-[200px] flex flex-col mb-36">
+			<DivitionOne />
+			<div className="w-full h-5/6 flex items-center justify-center relative bottom-[19rem] md:bottom-[18rem] lg:bottom-[20rem] xl:bottom-[30rem]">
 				<div
 					id={styles.counterBack}
-					className="flex items-center justify-center w-96 h-96 z-20"
+					className="flex items-center justify-center w-80 h-80 md:w-[30rem] md:h-[30rem] xl:w-[40rem] xl:h-[40rem] z-20"
 				>
-					<div className="bg-white w-40 md:w-60 h-40 md:h-60 rounded-full flex items-center justify-center text-black flex-col gap-3 z-0">
+					<div className="bg-white w-60 md:w-80 h-60 md:h-80 xl:w-[25rem] xl:h-[25rem] rounded-full flex items-center justify-center text-black flex-col gap-3 z-0">
 						<h2 className="font-thin text-amber-500 text-2xl poppinsFont align-text-top">
-							Faltan
+							Falta
 						</h2>
-						<div className="flex w-full items-center justify-center">
+						<div className="flex w-[80%] items-center justify-center">
 							{timerComponents.length ? (
 								timerComponents
 							) : (

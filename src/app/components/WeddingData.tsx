@@ -1,6 +1,6 @@
 import { formatDate } from "@/utils/formatDate";
 import type React from "react";
-
+import styles from "@/styles/weddingData.module.css";
 interface IWeddingDataProps {
 	svg: React.ReactNode;
 	title: string;
@@ -17,12 +17,17 @@ const WeddingData: React.FC<IWeddingDataProps> = ({
 }): React.JSX.Element => {
 	return (
 		<>
-			<div className="w-full max-w[100vh] md:w-[50%] h-full flex flex-col items-center justify-center my-5">
-				<div className="w-40 h-40 flex items-center justify-center border rounded-full bg-white text-7xl m-2 shadow-lg text-[#83968d]">
+			<div className="w-full md:w-[40%] h-full flex flex-col items-center justify-center">
+				<div className="w-56 h-56 flex items-center justify-center border rounded-full bg-white text-9xl mb-4 shadow-lg text-[#83968d]">
 					{svg}
 				</div>
 				<div className="w-full flex flex-col items-center justify-center text-center gap-3">
-					<h2 className="text-4xl md:text-6xl cookieFont">{title}</h2>
+					<h2
+						id={styles.title}
+						className="text-6xl text-white bg-[#83968d] cookieFont p-[8px 30px] w-10/12 md:w-1/2"
+					>
+						{title}
+					</h2>
 					<div>
 						<h3 className="text-xl md:text-2xl font-bold montserratFont">
 							Día

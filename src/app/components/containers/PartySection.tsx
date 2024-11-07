@@ -8,6 +8,7 @@ import PartyDataCard from "../PartyDataCard";
 import MusicModalButton from "../MusicModalButton";
 import DressCodeModalButton from "../DressCodeModalButton";
 import ExtraDataModalButton from "../ExtraDataModalButton";
+import DivitionTwo from "../DivitionTwo";
 
 const partyData = [
 	{
@@ -33,9 +34,10 @@ const partyData = [
 const PartySection = (): React.JSX.Element => {
 	return (
 		<>
-			<section className="w-full h-max">
-				<div className="w-full flex flex-col items-center justify-center text-center gap-3">
-					<h2 className="text-4xl md:text-6xl cookieFont">Fiesta</h2>
+			<section className="w-full h-max mb-16">
+				<DivitionTwo />
+				<div className="w-full flex flex-col items-center justify-center text-center gap-3 montserratFont text-lg text-[#83968d]">
+					<h2 className="text-8xl cookieFont">Fiesta</h2>
 					<p>¡Hagamos una fiesta épica!</p>
 					<p>Les dejamos algunos detalles a tener en cuenta</p>
 				</div>

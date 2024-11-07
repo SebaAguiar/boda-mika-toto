@@ -1,6 +1,7 @@
 import type React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
 	title: "Boda Mika y Toto",
@@ -14,8 +15,9 @@ const RootLayout = async ({
 }>) => {
 	return (
 		<html lang="en">
-			<body className="max-w-screen h-screen flex flex-col bg-[#efede7]">
-				{children}
+			<body className="max-w-screen h-screen flex flex-col bg-[#faf7f3] overflow-auto">
+				<div className="flex-grow">{children}</div>
+				<Footer />
 			</body>
 		</html>
 	);
