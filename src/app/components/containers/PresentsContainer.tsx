@@ -16,7 +16,7 @@ const PresentsContainer = () => {
 
 	return (
 		<>
-			<section className="w-full h-max flex flex-col items-center justify-center text-xl montserratFont text-center text-[#83968d] bg-[#efede7] gap-3">
+			<section className="w-full h-max flex flex-col items-center justify-center text-xl montserratFont text-center text-[#83968d] bg-[#efede7]">
 				<DivitionFour />
 				<div className="w-full flex flex-col items-center justify-center text-center gap-3">
 					<h2 className="text-8xl cookieFont">Regalos</h2>
@@ -35,7 +35,7 @@ const PresentsContainer = () => {
 							<strong className="cursor-text">Alias:</strong> BODAMICAYTOTO
 						</li>
 						<li>
-							<strong>Titular:</strong> Osbaldo Abel Aguiar
+							<strong>Titular:</strong> Osvaldo Abel Aguiar
 						</li>
 						<li>
 							<strong>Banco:</strong> Bancon de la Nacion Argentina

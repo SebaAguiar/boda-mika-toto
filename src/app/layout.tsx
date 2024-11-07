@@ -15,7 +15,7 @@ const RootLayout = async ({
 }>) => {
 	return (
 		<html lang="en">
-			<body className="max-w-screen h-screen flex flex-col bg-[#faf7f3] overflow-auto">
+			<body className="max-w-screen h-screen flex flex-col bg-[#faf7f3] overflow-x-hidden overflow-y-auto">
 				<div className="flex-grow">{children}</div>
 				<Footer />
 			</body>

@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
 	return (
 		<footer className="w-full min-h-[10rem] p-4 flex flex-col items-center justify-center bg-[#83968d]">
-			<p className="text-white text-lg md:text-5xl font-bold cookieFont text-center self-center relative">
+			<p className="text-white text-5xl font-bold cookieFont text-center self-center relative">
 				M{" "}
-				<span className="text-3xl relative" style={{ top: "-0.2em" }}>
+				<span className="text-2xl relative" style={{ top: "-0.2em" }}>
 					&
 				</span>{" "}
 				T{" "}
