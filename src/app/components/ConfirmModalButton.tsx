@@ -2,7 +2,7 @@
 import { useStore } from "@/zustand/store";
 import React from "react";
 
-const ExtraDataModalButton = () => {
+const ConfirmModalButton = () => {
 	const setPartyOpen = useStore((state) => state.setPartyOpen);
 	const handleClick = (): void => {
 		setPartyOpen();
@@ -15,10 +15,10 @@ const ExtraDataModalButton = () => {
 				type="button"
 				onClick={handleClick}
 			>
-				Mas Info
+				Confirmar
 			</button>
 		</>
 	);
 };
 
-export default ExtraDataModalButton;
+export default ConfirmModalButton;

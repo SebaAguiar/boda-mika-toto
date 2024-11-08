@@ -2,9 +2,9 @@
 import type React from "react";
 import { useStore } from "@/zustand/store";
 import { useState } from "react";
-import { PiMusicNotesDuotone } from "react-icons/pi";
+import { PiNotepadDuotone } from "react-icons/pi";
 
-const MusicModal: React.FC = (): React.JSX.Element => {
+const ConfirmModal: React.FC = (): React.JSX.Element => {
 	const formInputs = [
 		{
 			type: "text",
@@ -12,24 +12,10 @@ const MusicModal: React.FC = (): React.JSX.Element => {
 			label: "Tu Nombre",
 			placeholder: " ",
 		},
-		{
-			type: "text",
-			name: "floating_song",
-			label: "Cancion",
-			placeholder: " ",
-		},
-		{
-			type: "text",
-			name: "floating_song_url",
-			label: "Si desea ingrese el link de Spotify, Youtube, etc",
-			placeholder: " ",
-		},
 	];
 
 	const [formData, setFormData] = useState({
 		floating_username: "",
-		floating_song: "",
-		floating_song_url: "",
 	});
 
 	const setMusicOpen = useStore.getState().setMusicOpen;
@@ -73,16 +59,16 @@ const MusicModal: React.FC = (): React.JSX.Element => {
 					className="w-[450px] h-[450px] bg-[#efede7] rounded-full flex flex-col items-center justify-center"
 				>
 					<div className="w-32 h-32 flex items-center justify-center text-6xl bg-white rounded-full relative top-[-20px] text-[#83968d]">
-						<PiMusicNotesDuotone />
+						<PiNotepadDuotone />
 					</div>
-					<h2 className="text-5xl cookieFont m-2">Música</h2>
+					<h2 className="text-5xl cookieFont m-2">Confirmar</h2>
 					<form
 						onSubmit={handleSubmit}
-						className="w-full h-full rounded-full mx-auto flex flex-col items-center justify-center"
+						className="w-full h-full rounded-full mx-auto flex items-start justify-center p-10"
 					>
 						{formInputs.map(
 							(input): React.JSX.Element => (
-								<div key={input.name} className="relative z-0 w-4/6 mb-5 group">
+								<div key={input.name} className="relative z-0 w-3/6 mb-5 group">
 									<input
 										type={input.type}
 										name={input.name}
@@ -105,7 +91,7 @@ const MusicModal: React.FC = (): React.JSX.Element => {
 							type="submit"
 							className="text-white bg-[#83968d] hover:bg-[#83968d] focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#83968d] dark:hover:bg-[#83968d] dark:focus:ring-[#83968d] m-5"
 						>
-							Enviar
+							Buscar
 						</button>
 					</form>
 				</div>
@@ -114,4 +100,4 @@ const MusicModal: React.FC = (): React.JSX.Element => {
 	);
 };
 
-export default MusicModal;
+export default ConfirmModal;

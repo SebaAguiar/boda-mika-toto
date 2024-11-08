@@ -7,7 +7,7 @@ import {
 import PartyDataCard from "../PartyDataCard";
 import MusicModalButton from "../MusicModalButton";
 import DressCodeModalButton from "../DressCodeModalButton";
-import ExtraDataModalButton from "../ExtraDataModalButton";
+import ExtraDataModalButton from "../ConfirmModalButton";
 import DivitionTwo from "../DivitionTwo";
 
 const partyData = [
