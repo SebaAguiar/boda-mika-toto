@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Toto-Aguiar-s-workspace-e9i8ue.us-east-1.xata.sh/db/boda",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

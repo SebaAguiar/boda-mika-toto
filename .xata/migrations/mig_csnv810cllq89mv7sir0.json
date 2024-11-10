@@ -1,0 +1,26 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_csnv810cllq89mv7sir0",
+    "operations": [
+      {
+        "add_column": {
+          "table": "music",
+          "column": {
+            "pk": false,
+            "name": "username",
+            "type": "text",
+            "unique": false,
+            "comment": "",
+            "nullable": true
+          }
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_csnv810cllq89mv7sir0",
+  "parent": "mig_csnv7q8g9g9pf6lqvu9g",
+  "schema": "public",
+  "startedAt": "2024-11-09T23:45:09.465308Z"
+}
