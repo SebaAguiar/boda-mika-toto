@@ -57,6 +57,7 @@ const MusicModal: React.FC = (): React.JSX.Element => {
 
 	const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
 		event.preventDefault();
+		alert('Esta funcionalidad estará disponible pronto...');
 		console.log(formData);
 	};
 
@@ -103,7 +104,7 @@ const MusicModal: React.FC = (): React.JSX.Element => {
 						)}
 						<button
 							type="submit"
-							className="text-white bg-[#83968d] hover:bg-[#83968d] focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#83968d] dark:hover:bg-[#83968d] dark:focus:ring-[#83968d] m-5"
+							className="text-white bg-[#83968d] hover:bg-[#83968d] focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-20 px-5 py-2.5 text-center dark:bg-[#83968d] dark:hover:bg-[#83968d] dark:focus:ring-[#83968d] m-5"
 						>
 							Enviar
 						</button>

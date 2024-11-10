@@ -10,7 +10,7 @@ const Footer = () => {
 				</span>{" "}
 				T{" "}
 			</p>
-			<p className="text-white">
+			<p className="text-white text-sm">
 				Desarrollado por:{" "}
 				<Link className="underline" target="_blank" href="https://arsian.dev">
 					Seba Aguiar
