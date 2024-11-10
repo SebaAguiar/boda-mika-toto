@@ -10,7 +10,6 @@ const ModalsContainter = () => {
 	const dressCodeOpen = useStore((state) => state.dressCodeOpen);
 	const partyOpen = useStore((state) => state.partyOpen);
 
-	console.log(partyOpen);
 	return (
 		<>
 			<div

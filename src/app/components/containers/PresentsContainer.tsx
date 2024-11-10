@@ -25,8 +25,8 @@ const PresentsContainer = () => {
 						Pero si aun asi quieres puede regalarnos enviando al siguiente cbu
 					</p>
 				</div>
-				<div>
-					<ul className="decoration-dotted list-disc flex flex-col items-center justify-center gap-1 mb-20">
+				<div className="mb-20">
+					<ul className="decoration-dotted list-disc flex flex-col items-center justify-center gap-1">
 						<li
 							onClick={() => copyToClipboard("BODAMICAYTOTO")}
 							onKeyDown={() => ""}
@@ -44,6 +44,7 @@ const PresentsContainer = () => {
 							<strong>CUIL:</strong> 20285335354
 						</li>
 					</ul>
+					<p className="mt-5">En la fiesta también habrá una urna</p>
 				</div>
 			</section>
 		</>

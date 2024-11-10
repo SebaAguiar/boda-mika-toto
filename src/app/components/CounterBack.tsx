@@ -52,10 +52,12 @@ const CounterBack = (): JSX.Element => {
 				key={interval}
 				className="flex flex-col items-center justify-center m-1"
 			>
-				<p className="font-bold text-2xl poppinsFont text-yellow-400">
+				<p className="font-bold text-2xl poppinsFont text-[#83968d]">
 					{timeLeft[key]}
 				</p>
-				<p className="font-thin text-sm text-black">{interval}</p>
+				<p className="font-thin text-sm text-[#83968d]">
+					{interval.charAt(0).toUpperCase()}
+				</p>
 			</div>,
 		);
 	}
@@ -66,10 +68,10 @@ const CounterBack = (): JSX.Element => {
 			<div className="w-full h-5/6 flex items-center justify-center relative bottom-[19rem] md:bottom-[18rem] lg:bottom-[20rem] xl:bottom-[30rem]">
 				<div
 					id={styles.counterBack}
-					className="flex items-center justify-center w-80 h-80 md:w-[30rem] md:h-[30rem] xl:w-[40rem] xl:h-[40rem] z-20"
+					className="flex items-center justify-center w-80 h-80 md:w-[30rem] md:h-[30rem] z-20"
 				>
-					<div className="bg-white w-60 md:w-80 h-60 md:h-80 xl:w-[25rem] xl:h-[25rem] rounded-full flex items-center justify-center text-black flex-col gap-3 z-0">
-						<h2 className="font-thin text-amber-500 text-2xl poppinsFont align-text-top">
+					<div className="bg-white w-60 md:w-80 h-60 md:h-80 rounded-full flex items-center justify-center text-black flex-col gap-3 z-0">
+						<h2 className="font-thin text-[#83968d] text-2xl poppinsFont align-text-top">
 							Falta
 						</h2>
 						<div className="flex w-[80%] items-center justify-center">

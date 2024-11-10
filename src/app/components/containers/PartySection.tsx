@@ -41,7 +41,7 @@ const PartySection = (): React.JSX.Element => {
 					<p>¡Hagamos una fiesta épica!</p>
 					<p>Les dejamos algunos detalles a tener en cuenta</p>
 				</div>
-				<div className="w-full flex flex-col lg:flex-row items-center justify-center">
+				<div className="w-full flex flex-col lg:flex-row items-center justify-center gap-5">
 					{partyData.map(
 						(data): React.JSX.Element => (
 							<PartyDataCard

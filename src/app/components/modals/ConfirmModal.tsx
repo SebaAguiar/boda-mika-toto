@@ -3,6 +3,7 @@ import type React from "react";
 import { useStore } from "@/zustand/store";
 import { useState } from "react";
 import { PiNotepadDuotone } from "react-icons/pi";
+import { getUserByName } from '@/app/serrvices/users';
 
 const ConfirmModal: React.FC = (): React.JSX.Element => {
 	const formInputs = [
@@ -18,14 +19,14 @@ const ConfirmModal: React.FC = (): React.JSX.Element => {
 		floating_username: "",
 	});
 
-	const setMusicOpen = useStore.getState().setMusicOpen;
+	const setPartyOpen = useStore.getState().setPartyOpen;
 	const handleClick = (): void => {
-		setMusicOpen();
+		setPartyOpen();
 	};
 
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>): void => {
 		if (event.key === "Esc") {
-			setMusicOpen();
+			setPartyOpen();
 		}
 	};
 
@@ -41,9 +42,11 @@ const ConfirmModal: React.FC = (): React.JSX.Element => {
 		}));
 	};
 
-	const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+		console.log('FORM')
 		event.preventDefault();
-		console.log(formData);
+		const users = await getUserByName(formData.floating_username);
+		console.log(users)
 	};
 
 	return (
@@ -61,7 +64,12 @@ const ConfirmModal: React.FC = (): React.JSX.Element => {
 					<div className="w-32 h-32 flex items-center justify-center text-6xl bg-white rounded-full relative top-[-20px] text-[#83968d]">
 						<PiNotepadDuotone />
 					</div>
-					<h2 className="text-5xl cookieFont m-2">Confirmar</h2>
+					<h2 className="text-5xl cookieFont m-2 ">Confirmar</h2>
+					<p className="montserratFont text-sm text-center text-[#83968d] break-words p-4">
+						<strong>IMPORTANTE:</strong>
+						<br />
+						Buscate con el mismo nombre con el que te llegó la invitación
+					</p>
 					<form
 						onSubmit={handleSubmit}
 						className="w-full h-full rounded-full mx-auto flex items-start justify-center p-10"
