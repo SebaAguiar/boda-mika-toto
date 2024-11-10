@@ -122,10 +122,11 @@ const ConfirmModal: React.FC = (): React.JSX.Element => {
               Buscar
             </button>
           </form>
-          <div className='w-full h-full flex flex-col items-center justify-start'>
+          <div className='w-full h-full flex flex-col items-center justify-start px-16'>
             {foundUser.map((user: any) => (
-              <div key={user.name} className='w-full h-max flex flex-row items-center justify-center'>
-                <p className='text-center break-words'>{user.name}</p> 
+              <div key={user.name} className='w-full h-max flex flex-col items-center justify-center m-2'>
+                <p className='text-center break-words montserratFont text-lg text-[#83968d]'>{user.name}</p> 
+                <div className='w-full h-max flex flex-row items-center justify-center px-4'>
                 <select
                   className='w-28 h-10 border-2 border-gray-300 rounded-lg mx-5'
                   onChange={(event) => handleSelectChange(event, user)}
@@ -143,6 +144,8 @@ const ConfirmModal: React.FC = (): React.JSX.Element => {
                 >
                   Confirmar
                 </button>
+                </div>
+        
               </div>
             ))}
           </div>

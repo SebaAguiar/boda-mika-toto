@@ -102,12 +102,100 @@ const tables = [
     },
     columns: [
       {
-        name: 'name',
+        name: '_10',
         type: 'text',
-        notNull: true,
+        notNull: false,
         unique: false,
         defaultValue: null,
-        comment: '',
+        comment: '{}',
+      },
+      {
+        name: '_11',
+        type: 'int',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: '_3',
+        type: 'text',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: '_4',
+        type: 'text',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: '_5',
+        type: 'text',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: '_6',
+        type: 'text',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: '_7',
+        type: 'text',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: '_8',
+        type: 'text',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: '_9',
+        type: 'text',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: 'cantidad',
+        type: 'int',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: 'cantidad_2',
+        type: 'int',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
+      },
+      {
+        name: 'name',
+        type: 'text',
+        notNull: false,
+        unique: false,
+        defaultValue: null,
+        comment: '{}',
       },
       {
         name: 'status',
@@ -187,8 +275,9 @@ export const getXataClient = () => {
 
   instance = new XataClient({
     apiKey: process.env.XATA_API_KEY,
-    branch: 'main',
+    branch: process.env.XATA_BRANCH,
   });
   return instance;
 };
+
 export const xata = getXataClient();

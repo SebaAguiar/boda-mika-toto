@@ -26,7 +26,7 @@ const partyData = [
 	{
 		title: "Confirmar",
 		icon: <PiNotepadDuotone />,
-		text: "Tenes tiempo hasta el 26 de Noviembre",
+		text: "Tenes tiempo hasta el 1 de Diciembre",
 		button: <ExtraDataModalButton />,
 	},
 ];
@@ -36,7 +36,7 @@ const PartySection = (): React.JSX.Element => {
 		<>
 			<section className="w-full h-max mb-16">
 				<DivitionTwo />
-				<div className="w-full flex flex-col items-center justify-center text-center gap-3 montserratFont text-lg text-[#83968d]">
+				<div className="w-full flex flex-col items-center justify-center text-center gap-3 montserratFont text-lg text-[#83968d] px-4">
 					<h2 className="text-8xl cookieFont">Fiesta</h2>
 					<p>¡Hagamos una fiesta épica!</p>
 					<p>Les dejamos algunos detalles a tener en cuenta</p>

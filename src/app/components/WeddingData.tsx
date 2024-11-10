@@ -17,7 +17,7 @@ const WeddingData: React.FC<IWeddingDataProps> = ({
 }): React.JSX.Element => {
 	return (
 		<>
-			<div className="w-full md:w-[40%] h-full flex flex-col items-center justify-center">
+			<div className="w-full md:w-[40%] h-full flex flex-col items-center justify-center px-4">
 				<div className="w-56 h-56 flex items-center justify-center border rounded-full bg-white text-9xl mb-4 shadow-lg text-[#83968d]">
 					{svg}
 				</div>
@@ -30,9 +30,9 @@ const WeddingData: React.FC<IWeddingDataProps> = ({
 					</h2>
 					<div>
 						<h3 className="text-xl md:text-2xl font-bold montserratFont">
-							Día
+							Fecha y Hora
 						</h3>
-						<p className="montserratFont text-lg">{formatDate(date)}</p>
+						<p className="montserratFont text-lg">{formatDate(date) !== 'Invalid Date' ? formatDate(date) : 'Luego de la misa'}</p>
 					</div>
 					<div>
 						<h3 className="text-xl md:text-2xl font-bold montserratFont">

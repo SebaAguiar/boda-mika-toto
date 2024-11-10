@@ -10,5 +10,14 @@ export const formatDate = (fecha: string): string => {
   const formated = new Date(fecha).toLocaleDateString('es-ES', options);
 
   // Reemplaza la coma y ajusta el formato final
-  return formated.replace(',', ' ').replace(' ', ' ');
+  let formatedAdjusted = formated.replace(',', ' ').replace(' ', ' ');
+
+  // Capitalizar la primera letra del día de la semana
+  const capitalizeFirstLetter = (str: string): string =>
+    str.charAt(0).toUpperCase() + str.slice(1);
+
+  // Capitalizar la primera letra de la cadena completa
+  formatedAdjusted = capitalizeFirstLetter(formatedAdjusted);
+
+  return formatedAdjusted;
 };

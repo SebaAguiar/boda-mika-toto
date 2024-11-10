@@ -21,7 +21,7 @@ const HeroSection = (): JSX.Element => {
 				</div>
 				<div className="w-full flex items-center justify-center">
 					<h1 className="text-5xl md:text-8xl lg:text-9xl cookieFont w-full flex items-center justify-center gap-4">
-						Mika{" "}
+						Mica{" "}
 						<span className="rounded-[100%] bg-white text-slate-600 text-4xl lg:5xl h-10 w-10 flex items-center justify-center m-2">
 							&
 						</span>{" "}

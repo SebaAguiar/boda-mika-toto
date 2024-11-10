@@ -15,14 +15,14 @@ const weddingData = [
 		title: "Ceremonia",
 		date: "2024-12-21T20:00:00",
 		place: "Basílica Inmaculada Concepción",
-		address: "Urquiza 1000, Concepción del Uruguay",
+		address: "3 de Febrero 41, Concepción del Uruguay, Entre Ríos",
 	},
 	{
 		svg: <PiConfettiDuotone />,
 		title: "Fiesta",
-		date: "2024-12-21T20:00:00",
-		place: "Basílica Inmaculada Concepción",
-		address: "Urquiza 1000, Concepción del Uruguay",
+		date: "Luego de la misa",
+		place: "Salón Las Lilas",
+		address: "Bv. Ricardo Balbín 2699, Concepción del Uruguay, Entre Ríos",
 	},
 ];
 

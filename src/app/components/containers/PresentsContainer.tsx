@@ -20,13 +20,12 @@ const PresentsContainer = () => {
 				<DivitionFour />
 				<div className="w-full flex flex-col items-center justify-center text-center gap-3">
 					<h2 className="text-8xl cookieFont">Regalos</h2>
-					<p>El Regalo Mas importante es tu presencia.</p>
-					<p>
-						Pero si aun asi quieres puede regalarnos enviando al siguiente cbu
-					</p>
+					<p>El regalo más importante es tu presencia, <br/>pero si querés regalarnos algo, te dejamos este alias.</p>
+						
+
 				</div>
-				<div className="mb-20">
-					<ul className="decoration-dotted list-disc flex flex-col items-center justify-center gap-1">
+				<div className="mb-20 mt-3">
+					<ul className="decoration-dotted list-disc flex flex-col items-center justify-center gap-1 p-10 break-words">
 						<li
 							onClick={() => copyToClipboard("BODAMICAYTOTO")}
 							onKeyDown={() => ""}
@@ -38,13 +37,13 @@ const PresentsContainer = () => {
 							<strong>Titular:</strong> Osvaldo Abel Aguiar
 						</li>
 						<li>
-							<strong>Banco:</strong> Bancon de la Nacion Argentina
+							<strong>Banco:</strong> Banco de la Nación Argentina
 						</li>
 						<li>
 							<strong>CUIL:</strong> 20285335354
 						</li>
 					</ul>
-					<p className="mt-5">En la fiesta también habrá una urna</p>
+					<p className="mt-5">En la fiesta también habrá una urna.</p>
 				</div>
 			</section>
 		</>
